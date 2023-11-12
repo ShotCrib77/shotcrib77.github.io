@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: aqua;
+}
+
+nav {
+  width:100%;
+  background-color: #222222;
+  padding: 1rem;
+}
+
+.logo {
+  object-fit: contain;
+}
+
+nav .logo {
+  max-height: 60px;
+  max-width: 150px;
+  top: 0;
+  bottom:0;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+.first_section {
+  background-image: "LBS_Bakgrund.jpg";
+  background-size: 80vh;
+  background-repeat: no-repeat;
+}
