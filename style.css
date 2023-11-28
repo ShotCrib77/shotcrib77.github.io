@@ -7,8 +7,12 @@ html {
   background-color: aqua;
 }
 
+body {
+  width: 100vw;
+}
+
 nav {
-  width:100%;
+  width: 100vw;
   background-color: #222222;
   padding: 1rem;
 }
@@ -30,7 +34,8 @@ img {
 }
 
 .first_section {
-  background-image: "LBS_Bakgrund.jpg";
-  background-size: 80vh;
+  background-image: url("resources/LBS_Bakgrund.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
 }
+
