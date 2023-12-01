@@ -5,6 +5,7 @@
 
 html {
   background-color: aqua;
+  /* font-family: Avenir --> Måste ladda ner*/
 }
 
 body {
@@ -34,8 +35,20 @@ img {
 }
 
 .first_section {
+  height:225rem;
   background-image: url("resources/LBS_Bakgrund.jpg");
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
+.text_box_first_section {
+  color: white;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: #222222;
+}
