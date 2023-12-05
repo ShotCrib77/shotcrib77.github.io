@@ -40,15 +40,25 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position:relative;
 }
 
 .text_box_first_section {
-  color: white;
-  font-size: 3rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
+color: white;
+font-size: 3rem;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+}
+
+.text_box_first_section ul li {
+  margin: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
   background-color: #222222;
+  list-style: none;
 }
