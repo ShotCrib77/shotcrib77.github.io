@@ -5,15 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/2dc861cff0.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Avenir&display=swap">
   <title>LBS</title>
 </head>
   <body>
     <nav>
-      <img class="logo" src="https://lbs.se/wp-content/uploads/2023/04/lbs-logo-white2.gif" alt="LBS logga" width="auto">
-      <p>Sök</p>
-      <p>Meny</p>
+      <div class="container">
+        <img class="logo" src="https://lbs.se/wp-content/uploads/2023/04/lbs-logo-white2.gif" alt="LBS logga">
+      </div>  
+      <ul>
+        <li>Sök</li>
+        <li>Meny</li>
+      </ul>
       <!-- 2 Loggor (Sök + meny) -->
     </nav>
     <main>
@@ -24,13 +28,12 @@
             <li>CREATING,</li>
             <li>CREATE</li>
             <li>EXPERIENCES</li>
-            <button class = "black_rounded_button">Här finns vi</button> 
+            <button class="black_rounded_button">Här finns vi</button> 
           </ul>
           </div>
-
       </section>
-      <section class="About">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/kiYjENZEyBw" frameborder="0" allowfullscreen></iframe>
+      <section class="about_section">
+        <iframe src="https://www.youtube.com/embed/kiYjENZEyBw" frameborder="0" allowfullscreen></iframe>
         <h2>LBS Kreativa Gymnasiet</h2>
         <p>
           LBS Kreativa Gymnasiet utbildar dig för att lyckas i framtidens kreativa
@@ -38,10 +41,17 @@
           en kreativ framtid och som vill ha högskolebehörighet efter gymnasiet. Vill
           du skapa - är vi ditt självklara gymnasieval.
         </p>
-        <button>Varför LBS?</button>
+        <div class="button-container">
+          <button class="black_rounded_button">Varför LBS?</button>
+        </div>
       </section>
-      <section class="Our_schools">
+      <section class="our_schools_section">
         <h2>HÄR FINNS VÅRA GYMNASIUM</h2>
+        <p>Är du nyfiken på LBS Kreativa Gymnasiet? Klicka dig vidare till skolan närmast dig!</p>
+        <div>
+          <button class="black_rounded_button white_borderd_button">Se var skolorna finns</button>
+        </div>
+        <!--
         <p>BORÅS</p>
         <p>GÖTEBORG</p>
         <p>GÖTEBORG MEDIEGYMNASIET</p>
@@ -61,43 +71,79 @@
         <p>VARBERG</p>
         <p>VÄXJÖ</p>
         <p>ÖREBRO</p>
-        <!-- Ska bytas till <a> taggar -->
+        Ska bytas till <a> taggar och finns inte i mobil verisionen -->
       </section>
-      <section class="What's_new">
+      <section class="what_is_new_section">
         <h2>WHAT'S NEW?</h2>
-
         <div class="news_container">
-          <img src="resources/Space_academy.jpg" alt="LBS Space academy">
-
+          <div class = what_is_new_section_image>
+            <img src="resources/Space_academy.jpg" alt="LBS Space academy">
+          </div>
+          <div class = "news_text">
+            <time>30 november 2023</time>
+            <h3>LBS PÅ SPACE ACADEMY</h3>
+            <p>Fredagen den 10 november besökte LBS SPACE Academy. Under dagen fick eleverna hö...</p>
+            <span>Nyheter</span>
+          </div>
         </div>
         <div class="news_container">
-          <img src="resources/LBS_Esport.jpg" alt="LBS Esport">
+          <div class = what_is_new_section_image>
+            <img src="resources/LBS_Esport.jpg" alt="LBS Esport">
+          </div>
+          <div class = "news_text">
+            <time>13 november 2023</time>
+            <h3>SVENSK E-SPORT TAR HISTORISKT STEG FRAMÅT!...</h3>
+            <p>Blir en del av Riksidrottsförbundet</p>
+            <span>Nyheter</span>
+          </div>
         </div>
         <div class="news_container">
-          <img src="resources/LBS_30.jpg" alt="LBS 30 år">
+          <div class = what_is_new_section_image>
+            <img src="resources/LBS_30.jpg" alt="LBS 30 år">
+          </div>
+          <div class = "news_text">
+            <time>24 augusti 2023</time>
+            <h3>LBS 30 år!</h3>
+            <p>LBS fyller 30 år!</p>
+            <span>Nyheter</span>
+          </div>
         </div>
-
-        <button>Se alla nyheter</button>
+        <button class = "black_rounded_button">Se alla nyheter</button>
       </section>
     </main>
-
     <footer>
-      <div class="container">
-        <!-- svg ksdnjbv -->
-        <img src="resources/LBS_Logga.png" alt="LBS Logga">
-        
-      </div>
-      <div class="container">
-        <a>
-          <img src="resources/instagram.svg">
+      <div class="fotter_content">
+        <img src="https://lbs.se/wp-content/uploads/2023/04/lbs-logo-white2.gif" alt="LBS Logga">
+        <hr>
+        <p>Se alla skolor</p>
+        <hr>
+        <div class="social_media">
+          <a href="https://www.instagram.com/lbs_stockholm_sodra/">
+            <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+          </a>
+          <a href="https://www.facebook.com/LBSKreativaGymnasiet/">
+            <i class="fa-brands fa-facebook-f fa-2xl" style="color: #ffffff;"></i>
+          </a>
+          <a href="https://www.youtube.com/c/lbskreativagymnasiet">
+            <i class="fa-brands fa-youtube fa-2xl" style="color: #ffffff;"></i>
+          </a>
+        </div>
+        <hr>
+        <div class = "organization">
+          <b>Organisationen</b>
+          <p>Scholsoft</p>
+          <p>Jobba hos oss</p>
+          <p>Kontakta oss</p>
+          <p>En del av AcadeMedia</p>
 
-        </a>
+          <b>Kvalitet</b>
+          <p>Vårt kvalitetsarbete</p>
+          <p>Lämna synpunkter</p>
+          <p>Hantering av cookies och personuppgifter</p>
+        </div>
+        <hr>
+        <i>Vi använder cookies för att mäta trafiken på hemsidan och för statistik. Informationen som samlas in är anonym.</i>
       </div>
-      <div class="container">
-        
-      </div>
-
-      <p>Vi använder cookies för att mäta trafiken på hemsidan och för statistik. Informationen som samlas in är anonym.</p>
     </footer>
   </body>
 </html>

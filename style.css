@@ -1,17 +1,11 @@
 * {
-  max-width: 100% !important;
   margin: 0;
   padding: 0;
 }
 
 html {
-  background-color: aqua;
-  /* font-family: Avenir --> Måste ladda ner*/
-}
-
-body {
-  width: 100%;
-  font-family: "Avenir";
+  background-color: #FFFF;
+  font-family: "Avenir", sans-serif;
 }
 
 img {
@@ -19,23 +13,40 @@ img {
   border-style: none;
 }
 
+h2 {
+    font-size: 2rem;
+}
+
+hr {
+  width: 120%;
+}
 .black_rounded_button {
   color: #FFFF;
-  padding: 0.5em 1.5em;
+  padding: 0.5em 2.5em;
   background-color: #222222;
   border: 1px solid #222222;
   border-radius: 1.5em;
-  font-size: 0.5em;
-  margin-top: 2rem;
+  font-size: 1rem;
+  margin-top: 2em;
+  font-weight: bold;
 }
 
-/*nav*/
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navbar */
 nav {
   color:white;
   width:auto;
   font-size: 1rem;
   background-color: #222222;
-  padding: 0.5rem;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -43,14 +54,21 @@ nav {
 }
 
 nav .logo {
-  max-height: 10%;
+  width: 60%;
 }
 
-/*nav*/
+nav ul {
+  width: 50%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
 
-/*first section*/
+/* Navbar */
+
+/* First section */
 .first_section {
-  height: 35rem;
+  height: 40rem;
   background-image: url("resources/LBS_Bakgrund.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -59,19 +77,164 @@ nav .logo {
 }
 
 .text_box_first_section {
-color: white;
-font-size: 2rem;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-text-align: center;
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: bold;
 }
 
 .text_box_first_section ul li {
-  margin: 1rem;
-  padding: 0.25rem 0.5rem;
+  margin: 1.25rem;
+  padding: 0.5rem;
   background-color: #222222;
   list-style: none;
 }
-/*first section*/
+/* First section */
+
+/* About section */
+.about_section {
+  padding: 5rem 2rem;
+}
+
+.about_section h2 {
+  margin: 1rem 0;
+  width: 80%;
+}
+.about_section p {
+  max-width: 95%;
+}
+
+.about_section iframe {
+  height: 12.5rem;
+}
+/* About section */
+
+/* Our schools section */
+.our_schools_section {
+  padding: 5rem 0; 
+  color: #FFFF;
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.our_schools_section h2 {
+  margin-bottom: 2rem;
+}
+
+.our_schools_section p {
+  margin:auto;
+  width: 90%;
+}
+.white_borderd_button {
+  border-color: #FFFF;
+}
+/* Our schools section */
+
+/* What's new? */
+.what_is_new_section {
+  display: flex;
+  flex-direction: column;
+  color:#222222;
+  padding: 10rem, 0;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.news_container {
+  background-color: #ffeb3b;
+  width: 22.5rem;
+  height: 35rem;
+  border: 3px solid #000000;
+  margin-bottom: 3rem
+}
+.what_is_new_section h2 {
+  margin: 2rem 0;
+}
+.what_is_new_section_image img {
+  height: 100%;
+  width: 100%;
+}
+.what_is_new_section_image {
+  height: 55%;
+  border-bottom: 2px solid #000000;
+}
+.news_text {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.news_text h3 {
+  margin: 1rem 0;
+  font-size: 1em;
+}
+
+.news_text time {
+  font-size: 0.75em;
+}
+
+.news_text p {
+  width: 90%;
+  font-size: 0.9em;
+  margin-bottom: 3em;
+}
+
+.news_text span {
+  font-size: 0.9em;
+  border: 0.5px solid #000000;
+}
+/* What's new? */
+
+/* Fotter */
+footer {
+  color: #FFFF;
+  background-color: #222222;
+  padding: 5rem;
+}
+
+.fotter_content {
+  margin:auto;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.fotter_content p {
+  margin: 2rem 0;
+}
+.fotter_content div i {
+  font-size: 2em;
+}
+
+.fotter_content i, p {
+  font-size: 0.85rem;
+}
+
+footer img {
+  max-width: 100%;
+  margin-bottom: 3rem;
+}
+
+.social_media {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem 0;
+}
+
+.fotter_content i {
+  margin-top: 2rem;
+}
+
+.social_media i {
+  margin: 2rem 3rem;
+}
+
+.organization {
+  text-align: center;
+  margin-top: 2rem;
+}
