@@ -73,46 +73,52 @@
         <p>ÖREBRO</p>
         Ska bytas till <a> taggar och finns inte i mobil verisionen -->
       </section>
-      <section class="what_is_new_section">
+      <section class="news_section">
         <h2>WHAT'S NEW?</h2>
         <div class="news_container">
-          <div class = what_is_new_section_image>
-            <img src="resources/Space_academy.jpg" alt="LBS Space academy">
+          <div class="news">
+            <div class="news_image">
+              <img src="resources/Space_academy.jpg" alt="LBS Space academy">
+            </div>
+            <div class="news_text">
+              <time>30 november 2023</time>
+              <h3>LBS PÅ SPACE ACADEMY</h3>
+              <p>Fredagen den 10 november besökte LBS SPACE Academy. Under dagen fick eleverna hö...</p>
+              <span>Nyheter</span>
+            </div>
           </div>
-          <div class = "news_text">
-            <time>30 november 2023</time>
-            <h3>LBS PÅ SPACE ACADEMY</h3>
-            <p>Fredagen den 10 november besökte LBS SPACE Academy. Under dagen fick eleverna hö...</p>
-            <span>Nyheter</span>
+
+          <div class="news">
+            <div class="news_image">
+              <img src="resources/LBS_Esport.jpg" alt="LBS Esport">
+            </div>
+            <div class = "news_text">
+              <time>13 november 2023</time>
+              <h3>SVENSK E-SPORT TAR HISTORISKT STEG FRAMÅT!...</h3>
+              <p>Blir en del av Riksidrottsförbundet</p>
+              <span>Nyheter</span>
+            </div>
+          </div>
+
+          <div class="news">
+            <div class="news_image">
+              <img src="resources/LBS_30.jpg" alt="LBS 30 år">
+            </div>
+            <div class = "news_text">
+              <time>24 augusti 2023</time>
+              <h3>LBS 30 år!</h3>
+              <p>LBS fyller 30 år!</p>
+              <span>Nyheter</span>
+            </div>
           </div>
         </div>
-        <div class="news_container">
-          <div class = what_is_new_section_image>
-            <img src="resources/LBS_Esport.jpg" alt="LBS Esport">
-          </div>
-          <div class = "news_text">
-            <time>13 november 2023</time>
-            <h3>SVENSK E-SPORT TAR HISTORISKT STEG FRAMÅT!...</h3>
-            <p>Blir en del av Riksidrottsförbundet</p>
-            <span>Nyheter</span>
-          </div>
+        <div>
+          <button class="black_rounded_button">Se alla nyheter</button>
         </div>
-        <div class="news_container">
-          <div class = what_is_new_section_image>
-            <img src="resources/LBS_30.jpg" alt="LBS 30 år">
-          </div>
-          <div class = "news_text">
-            <time>24 augusti 2023</time>
-            <h3>LBS 30 år!</h3>
-            <p>LBS fyller 30 år!</p>
-            <span>Nyheter</span>
-          </div>
-        </div>
-        <button class = "black_rounded_button">Se alla nyheter</button>
       </section>
     </main>
     <footer>
-      <div class="fotter_content">
+      <div class="footer_content">
         <img src="https://lbs.se/wp-content/uploads/2023/04/lbs-logo-white2.gif" alt="LBS Logga">
         <hr>
         <p>Se alla skolor</p>
@@ -142,7 +148,7 @@
           <p>Hantering av cookies och personuppgifter</p>
         </div>
         <hr>
-        <i>Vi använder cookies för att mäta trafiken på hemsidan och för statistik. Informationen som samlas in är anonym.</i>
+        <i id="cookies">Vi använder cookies för att mäta trafiken på hemsidan och för statistik. Informationen som samlas in är anonym.</i>
       </div>
     </footer>
   </body>
